@@ -51,43 +51,47 @@
                             Virtual Hackathon 2020, making use of Grab's GPS
                             dataset for travel time predictions.
                         </p>
+                        <p>
+                            Dataset: Grab-Posisi GPS Trajectory Dataset <br />
+                            Techniques used: Geospatial Analysis, Machine
+                            Learning, Microsoft Azure Machine Learning Studio
+                        </p>
                     </header>
                     <div class="image main">
                         <img src="images/traveltimeprediction.jpg" alt="" />
                     </div>
                     <p>
-                        Donec eget ex magna. Interdum et malesuada fames ac ante
-                        ipsum primis in faucibus. Pellentesque venenatis dolor
-                        imperdiet dolor mattis sagittis. Praesent rutrum sem
-                        diam, vitae egestas enim auctor sit amet. Pellentesque
-                        leo mauris, consectetur id ipsum sit amet, fergiat.
-                        Pellentesque in mi eu massa lacinia malesuada et a elit.
-                        Donec urna ex, lacinia in purus ac, pretium pulvinar
-                        mauris. Nunc lorem mauris, fringilla in aliquam at,
-                        euismod in lectus. Pellentesque habitant morbi tristique
-                        senectus et netus et malesuada fames ac turpis egestas.
-                        Curabitur sapien risus, commodo eget turpis at,
-                        elementum convallis enim turpis, lorem ipsum dolor sit
-                        amet nullam.
+                        This is a travel time prediction model for private-hire
+                        cars in Singapore. The dataset used was from Grab, a
+                        private-hire car company in Southeast Asia.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Duis dapibus rutrum facilisis. Class aptent taciti
-                        sociosqu ad litora torquent per conubia nostra, per
-                        inceptos himenaeos. Etiam tristique libero eu nibh
-                        porttitor fermentum. Nullam venenatis erat id vehicula
-                        viverra. Nunc ultrices eros ut ultricies condimentum.
-                        Mauris risus lacus, blandit sit amet venenatis non,
-                        bibendum vitae dolor. Nunc lorem mauris, fringilla in
-                        aliquam at, euismod in lectus. Pellentesque habitant
-                        morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. In non lorem sit amet elit placerat
-                        maximus. Pellentesque aliquam maximus risus. Donec eget
-                        ex magna. Interdum et malesuada fames ac ante ipsum
-                        primis in faucibus. Pellentesque venenatis dolor
-                        imperdiet dolor mattis sagittis. Praesent rutrum sem
-                        diam, vitae egestas enim auctor sit amet. Pellentesque
-                        leo mauris, consectetur id ipsum.
+                        The dataset comes in the form of 1-second pings, with
+                        information such as GPS coordinates, current speed
+                        (estimated), type of device the driver is using,
+                        bearing, date and time (in UTC format).
+                    </p>
+                    <p>
+                        We originally made use of python and pandas to
+                        manipulate the data to derive intuitive predictors for
+                        determining the travel time of the ride. For example,
+                        the predictors derived includes euclidean distance and
+                        average bearing of the destination relative to the
+                        source.
+                    </p>
+                    <p>
+                        We also made HTTP requests to obtain weather and traffic
+                        data from external APIs from LTA and OneMap. This
+                        enabled us to get rainfall data by month and location
+                        within Singapore, as well as regional information
+                        (polygons) of the source and destination coordinates.
+                    </p>
+                    <p>
+                        We then made use of Microsoft Azure's Machine Learning
+                        Studio to upload our dataset and code for model training
+                        purposes. The eventual model made use of a stack
+                        ensemble with RMSE of 224 seconds, as compared to 240 as
+                        the benchmark for training RMSE.
                     </p>
                 </section>
             </div>
