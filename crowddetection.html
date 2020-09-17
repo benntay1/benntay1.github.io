@@ -47,47 +47,42 @@
                     <header class="major">
                         <h1>Real Time Crowd Detection</h1>
                         <p>
-                            This project was done as part of the Microsoft Azure
-                            Virtual Hackathon 2020, making use of Grab's GPS
-                            dataset for travel time predictions.
+                            This project is being done as part of my machine
+                            learning curriculum at NUS.
+                        </p>
+                        <p>
+                            Module code: CS3244 Machine Learning <br />
+                            Techniques: Deep Learning, Computer Vision,
+                            Convolutional Neural Networks
                         </p>
                     </header>
                     <div class="image main">
                         <img src="images/crowddetection.jpg" alt="" />
                     </div>
                     <p>
-                        Donec eget ex magna. Interdum et malesuada fames ac ante
-                        ipsum primis in faucibus. Pellentesque venenatis dolor
-                        imperdiet dolor mattis sagittis. Praesent rutrum sem
-                        diam, vitae egestas enim auctor sit amet. Pellentesque
-                        leo mauris, consectetur id ipsum sit amet, fergiat.
-                        Pellentesque in mi eu massa lacinia malesuada et a elit.
-                        Donec urna ex, lacinia in purus ac, pretium pulvinar
-                        mauris. Nunc lorem mauris, fringilla in aliquam at,
-                        euismod in lectus. Pellentesque habitant morbi tristique
-                        senectus et netus et malesuada fames ac turpis egestas.
-                        Curabitur sapien risus, commodo eget turpis at,
-                        elementum convallis enim turpis, lorem ipsum dolor sit
-                        amet nullam.
+                        This is an ongoing project where we make use of
+                        convolutional neural networks to conduct crowd counting
+                        on a static image. We make use of a CNN-based density
+                        estimation approach to generate a density map to build
+                        an end-to-end crowd counting model.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Duis dapibus rutrum facilisis. Class aptent taciti
-                        sociosqu ad litora torquent per conubia nostra, per
-                        inceptos himenaeos. Etiam tristique libero eu nibh
-                        porttitor fermentum. Nullam venenatis erat id vehicula
-                        viverra. Nunc ultrices eros ut ultricies condimentum.
-                        Mauris risus lacus, blandit sit amet venenatis non,
-                        bibendum vitae dolor. Nunc lorem mauris, fringilla in
-                        aliquam at, euismod in lectus. Pellentesque habitant
-                        morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. In non lorem sit amet elit placerat
-                        maximus. Pellentesque aliquam maximus risus. Donec eget
-                        ex magna. Interdum et malesuada fames ac ante ipsum
-                        primis in faucibus. Pellentesque venenatis dolor
-                        imperdiet dolor mattis sagittis. Praesent rutrum sem
-                        diam, vitae egestas enim auctor sit amet. Pellentesque
-                        leo mauris, consectetur id ipsum.
+                        Datasets used (for training and evaluation): JHU++ large
+                        scale crowd counting dataset, ShanghaiTech A and B
+                        dataset. Data is consolidated into a common format and
+                        store within HDF5 files.
+                    </p>
+                    <p>
+                        After loading in the datasets, we first implemented two
+                        neural networks, namely MCNN and CSRNet, which are both
+                        structurally different from each other (the former being
+                        a multi-column NN and the latter a single-column NN).
+                    </p>
+                    <p>
+                        Our team aims to evaluate and make improvements to the
+                        chosen models through the creation of masks which blocks
+                        out potential noise in our raw images to generate more
+                        accurate density maps for estimation.
                     </p>
                 </section>
             </div>
